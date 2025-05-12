@@ -1,11 +1,10 @@
 function love.load()
   BgGridX = -96
-  BgGridY = 0
   love.graphics.setDefaultFilter("nearest", "nearest")
   BgGridImage = love.graphics.newImage("assets/sprites/lines.png")
   MenuUILogo = love.graphics.newImage("assets/sprites/logo.png")
   BgMenuSplash = love.graphics.newImage("assets/sprites/splash.png")
-  MenuMusic = love.audio.newSource("/assets/music/deep.wav", "stream")
+  MenuMusic = love.audio.newSource("/assets/music/menu.mp3", "stream")
   MenuMusic:setLooping(true)
   MenuMusic:play()
 end
